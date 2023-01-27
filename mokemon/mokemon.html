@@ -1,0 +1,66 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOKEMON!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="Escoje_mascota">
+        <h1 class="titulo">MOKEMON!</h1>
+
+        <h2 class="subtitulo">Elije tu Mascota</h2>
+
+        <div id="contenedor_tarjetas" class="tarjetas">
+
+        </div>
+        
+        <button id="boton_mascota">Seleciona Mascota</button>
+    </section>
+
+    <section id="ver-mapa">
+        <h2 class="subtitulo">Recorre El Mapa Con Tu Mokemon</h2>
+        <canvas id="mapa"></canvas>
+        <button onmouseup="detenerMovimiento()" onmousedown="moverArriba()">⬆</button>
+        <div>
+            <button onmouseup="detenerMovimiento()" onmousedown="moverIzquierda()">⬅</button>
+            <button onmouseup="detenerMovimiento()" onmousedown="moverAbajo()">⬇</button>
+            <button onmouseup="detenerMovimiento()" onmousedown="moverDerecha()">➡</button>
+        </div>
+    </section>
+
+    <section id="Escoje_ataque">
+        <h1 class="titulo">MOKEMON!</h1>
+
+        <h2 class="subtitulo">Elije tu Ataque</h2>
+
+        <div id="contenedor-ataques" class="tarjetas">
+           
+        </div>
+
+        <div id="Mensaje">
+            <p id="resultado">Mucha Suerte</p>
+
+            <section id="Reiniciar">
+                <button id="boton_reiniciar">Reiniciar</button>
+            </section>
+        </div>
+
+        <div class="ataques">
+            <div>
+                <p id="vidas-jugador">0</p>
+                <p id="mascota-jugador"></p>
+                <div id="ataques-del-jugador"></div>
+            </div>
+            <div>
+                <p id="vidas-enemiga">0</p>
+                <p id="mascota-enemiga"></p> 
+                <div id="ataques-del-enemigo"></div>
+            </div>
+        </div>   
+    </section>
+    <script src="js/mokemon.js"></script>
+</body>
+</html>
