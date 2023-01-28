@@ -224,6 +224,21 @@ function iniciarJuego() {
     botonMascotaJugador.addEventListener("click", selecionarJugadorMascota)
     
     botonReiniciar.addEventListener("click", reiniciarJuego)
+
+    unirseAlJuego()//ya s parte del backend
+}
+
+function unirseAlJuego() {
+    fetch("http://localhost:8080/unirse")//se utiliza para llamar a servicios por medio de http, ya sea post, get y resivir una respuesta asincronica, esta es tipo GET para post abria que colocar 
+    //method: "post"
+        .then(function (res) {//funcion por defecto de fetch para realizar el callback
+            if (res.ok) {
+                res.text()//llama como respuesta texto el id del jugador
+                    .then(function(respuesta) {
+                        console.log(respuesta)
+                    })
+            }
+        })
 }
 
 function selecionarJugadorMascota() {
