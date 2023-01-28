@@ -92,7 +92,7 @@ let dublai = new Mokepon('Dublai', './img/descarga (8).png', 5, './img/descarga 
 let calcifor = new Mokepon('Calcifor', './img/descarga (9).png', 5, './img/descarga.png')
 let bains = new Mokepon('Bains', './img/descarga (10).png', 5, './img/descarga (2).png')
 
-let nicodemoEnemigo = new Mokepon('Nicodemo', './img/descarga (5).png', 6, './img/descarga (3).png')
+let nicodemoEnemigo = new Mokepon('Nicodemo', './img/descarga (5).png', 5, './img/descarga (3).png')
 let furebalEnemigo = new Mokepon('Furebal', './img/descarga (6).png', 5, './img/descarga (11).png')
 let niqertanEnemigo = new Mokepon('Niqertan', './img/descarga (7).png', 5, './img/descarga (4).png')
 let dublaiEnemigo = new Mokepon('Dublai', './img/descarga (8).png', 5, './img/descarga (12).png')
