@@ -1,5 +1,5 @@
 const express = require("express")//permite utilizar libreriar instaladas con npm
-const cors = require("cors")//es la forma de inportar la libreria
+const cors = require("cors")//es la forma de inportar la libreria.....
 const app = express()//aplicacion que representa el servidor la cual resive y responde las peticiones de los clientes, esto genera una copia del servidor utilizado
 app.use(express.static("public"))//para conetar al wifi y ver en cualquiera que este conetado a la misma red
 app.use(cors())
